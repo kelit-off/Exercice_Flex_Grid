@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 header {
     background-color: red;
     text-align: center;
+    padding: 10px;
 }
 
 nav {
@@ -33,5 +33,39 @@ ul li a {
     border: 1px solid black;
     display: block;
     width: 100%;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+.wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.wrap p {
+    background-color: skyblue;
+    border:  1px dashed white;
+    flex: 1;
+    padding: 5px;
+}
+
+#aside1 {
+    background-color: yellow;
+    width: 60%;
+}
+
+#aside2 {
+    background-color: blueviolet;
+    width: 60%;
+}
+
+footer {
+    padding: 20px;
+    background-color: lawngreen;
     text-align: center;
 }
