@@ -1,46 +1,155 @@
-#tableau {
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    border: 10px solid black;
+    padding: 0;
+    margin-top: 60px;
+    width: 75%;
+    height: 90%;
+}
+
+
+.grid-container{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1.5fr 2fr 1fr 0.5fr; /* Colonnes de tailles différentes */
-    grid-template-rows: 1fr 0.5fr 1.5fr 1fr 2fr 0.5fr 1.5fr 1fr; /* Lignes de tailles différentes */
-    grid-gap: 5px; /* Espacement entre les blocs */
+    gap: 5px;
+    grid-template-areas: 'w1 w2 w2 w2 w2 w2 w2 w3 w3 w3 w3 w3 w3 w4 j1 '
+                         'w1 b1 b1 b1 b1 b1 b1 w5 w5 b2 b2 b2 b2 w4 j1 '
+                          'w1 b1 b1 b1 b1 b1 b1 w5 w5 b2 b2 b2 b2 w4 j1 '
+                          '. w6 w6 . w7 w7 w8 j2  j2 r1  r1 r1 r2 w4 j1 '
+                          '. w6 w6 . w7 w7 w8 j2  j2 r1  r1 r1 r2 w4 j1 '
+                          '. w6 w6 . w7 w7 w8 j2  j2 r1  r1 r1 r2 w4 j1 '
+                          '. w6 w6 . w7 w7 w8 j2  j2 r1  r1 r1 r2 w4 j1 '
+                          '. w6 w6 . j3 r3 r3 b3  b3 w9  w9 w9 w10 . . '
+                          '. w6 w6 . j3 r3 r3 b3  b3 w9  w9 w9 w10 . . '
+                          ' w12 r4 r4 . j5 w13 w13 w13  w13 w14  w14 b4 j4 w11 w11 '
+                         ' w12 r4 r4 . j5 w13 w13 w13  w13 w14  w14 b4 j4 w11 w11 '
+                         ' w12 r4 r4 . j5 w13 w13 w13  w13 w14 w14 b4 j4 w11 w11 '
+                         ' w12 r4 r4 . j5 r5 r5 .  . . . w15 w15 w15 w15 '
+                         ' w16 w16 w16 . j5 r5 r5 .  . . . w15 w15 w15 w15 ';
     width: 100%;
-    height: auto;
-}
-
-.case {
-    border: 2px solid black;
-}
-
-/* Blocs de couleurs */
-.red {
-    background-color: red;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.blue {
-    background-color: blue;
-}
-
-.black {
+    height: 100%;   
+    grid-template-rows:repeat( 14, auto);
+    grid-template-columns: repeat( 15, 1fr) ;
     background-color: black;
 }
 
-.white {
-    background-color: white;
+
+.b1,  .b2,  .b3,  .b4 {
+    background-color: blue;
+}
+.b1 {
+    grid-area: b1;
+}
+.b2 {
+    grid-area: b2;
+}
+.b3 {
+    grid-area: b3;
+}
+.b4 {
+    grid-area: b4;
 }
 
-/* Positionnement des blocs selon l'image */
-.b1 { grid-column: 1 / 3; grid-row: 1 / 2; }  /* Blanc en haut à gauche */
-.b2 { grid-column: 3 / 4; grid-row: 1 / 3; }  /* Noir vertical à gauche */
-.b3 { grid-column: 4 / 6; grid-row: 1 / 2; }  /* Bleu en haut au centre */
-.b4 { grid-column: 6 / 7; grid-row: 1 / 3; }  /* Rouge vertical à droite */
-.b5 { grid-column: 2 / 3; grid-row: 3 / 4; }  /* Jaune petit centre gauche */
-.b6 { grid-column: 4 / 6; grid-row: 3 / 4; }  /* Rouge grand centre */
-.b7 { grid-column: 1 / 3; grid-row: 5 / 6; }  /* Blanc en bas à gauche */
-.b8 { grid-column: 3 / 4; grid-row: 5 / 6; }  /* Bleu en bas centre */
-.b9 { grid-column: 4 / 5; grid-row: 5 / 7; }  /* Jaune en bas centre */
-.b10 { grid-column: 6 / 7; grid-row: 5 / 7; } /* Noir en bas à droite */
-.b11 { grid-column: 2 / 3; grid-row: 7 / 8; } /* Rouge petit en bas */
+
+
+.j1, .j2, .j3, .j4, .j5 {
+    background-color: yellow;
+}
+.j1 {
+    grid-area: j1;
+}
+.j2 {
+    grid-area: j2;
+}
+.j3 {
+    grid-area: j3;
+}
+.j4 {
+    grid-area: j4;
+}
+.j5 {
+    grid-area: j5;
+}
+
+
+
+.r1, .r2, .r3, .r4, .r5 {
+    background-color: red;
+}
+.r1 {
+    grid-area: r1;
+}
+.r2 {
+    grid-area: r2;
+}
+.r3 {
+    grid-area: r3;
+}
+.r4 {
+    grid-area: r4;
+}
+.r5 {
+    grid-area: r5;
+}
+
+
+
+.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8, .w9, .w10, .w11, .w12, .w13, .w14, .w15, .w16{
+    background-color: white;
+}
+.w1 {
+    grid-area: w1;
+}
+.w2 {
+    grid-area: w2;
+}
+.w3 {
+    grid-area: w3;
+}
+.w4 {
+    grid-area: w4;
+}
+.w5 {
+    grid-area: w5;
+}
+.w6 {
+    grid-area: w6;
+}
+.w7 {
+    grid-area: w7;
+}
+.w8 {
+    grid-area: w8;
+}
+.w9 {
+    grid-area: w9;
+}
+.w10 {
+    grid-area: w10;
+}
+.w11 {
+    grid-area: w11;
+}
+.w12 {
+    grid-area: w12;
+}
+.w13 {
+    grid-area: w13;
+}
+.w14 {
+    grid-area: w14;
+}
+.w15 {
+    grid-area: w15;
+}
+.w16 {
+    grid-area: w16;
+}
