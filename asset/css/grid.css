@@ -42,114 +42,114 @@ body{
 }
 
 
-.b1,  .b2,  .b3,  .b4 {
+.b {
     background-color: blue;
 }
-.b1 {
+.cb1 {
     grid-area: b1;
 }
-.b2 {
+.cb2 {
     grid-area: b2;
 }
-.b3 {
+.cb3 {
     grid-area: b3;
 }
-.b4 {
+.cb4 {
     grid-area: b4;
 }
 
 
 
-.j1, .j2, .j3, .j4, .j5 {
+.j {
     background-color: yellow;
 }
-.j1 {
+.cj1 {
     grid-area: j1;
 }
-.j2 {
+.cj2 {
     grid-area: j2;
 }
-.j3 {
+.cj3 {
     grid-area: j3;
 }
-.j4 {
+.cj4 {
     grid-area: j4;
 }
-.j5 {
+.cj5 {
     grid-area: j5;
 }
 
 
 
-.r1, .r2, .r3, .r4, .r5 {
+.r {
     background-color: red;
 }
-.r1 {
+.cr1 {
     grid-area: r1;
 }
-.r2 {
+.cr2 {
     grid-area: r2;
 }
-.r3 {
+.cr3 {
     grid-area: r3;
 }
-.r4 {
+.cr4 {
     grid-area: r4;
 }
-.r5 {
+.cr5 {
     grid-area: r5;
 }
 
 
 
-.w1, .w2, .w3, .w4, .w5, .w6, .w7, .w8, .w9, .w10, .w11, .w12, .w13, .w14, .w15, .w16{
+.w{
     background-color: white;
 }
-.w1 {
+.cw1 {
     grid-area: w1;
 }
-.w2 {
+.cw2 {
     grid-area: w2;
 }
-.w3 {
+.cw3 {
     grid-area: w3;
 }
-.w4 {
+.cw4 {
     grid-area: w4;
 }
-.w5 {
+.cw5 {
     grid-area: w5;
 }
-.w6 {
+.cw6 {
     grid-area: w6;
 }
-.w7 {
+.cw7 {
     grid-area: w7;
 }
-.w8 {
+.cw8 {
     grid-area: w8;
 }
-.w9 {
+.cw9 {
     grid-area: w9;
 }
-.w10 {
+.cw10 {
     grid-area: w10;
 }
-.w11 {
+.cw11 {
     grid-area: w11;
 }
-.w12 {
+.cw12 {
     grid-area: w12;
 }
-.w13 {
+.cw13 {
     grid-area: w13;
 }
-.w14 {
+.cw14 {
     grid-area: w14;
 }
-.w15 {
+.cw15 {
     grid-area: w15;
 }
-.w16 {
+.cw16 {
     grid-area: w16;
 }
